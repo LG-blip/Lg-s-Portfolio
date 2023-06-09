@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    margin: 30px 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul #navbtn{
+    text-decoration: none;
+    color: rgba(72,185,167,255);
+    border-color: rgba(72,185,167,255);
+}
+
+nav ul #navbtn:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(72,185,167,255);
+}
+
+nav .right{
+    margin: 0px 40px 0px 0px;
+}
+
+nav .middle{
+    display: flex;
+    width: 30%;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px 23px 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(112,125,150,255);
+}
+
+nav ul li h6{
+    color: rgba(72,185,167,255);
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgba(202,202,249,255);
+}
+
+nav .left{
+    margin: 0 23px 5px 23px;
+    font-size: 1.5rem;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.first > div{
+    width: 70%;
+}
+
+.first .leftsection{
+    font-size: 2.92rem;
+    font-weight: 249;
+}
+
+.first .leftsection .firstline{
+    color: rgba(72,185,167,255);
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.2rem;
+}
+
+.name{
+    font-size: 90px;
+    font-weight: bold;
+    color:rgba(204,215,246,255);
+}
+
+.first .leftsection .secondline{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: rgba(112,125,150,255);
+}
+
+.first .leftsection p{
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(112,125,150,255);
+}
+
+.first .leftsection p a{
+    color: rgba(72,185,167,255);
+}
+
+.first .rightsection img{
+    width: 100%;
+    margin: 30px 79px;
+}
+
+#element{
+    color: rgba(100,146,32,255);
+}
+
+.btn {
+    color: rgb(25, 25, 71);
+}
+
+
+.second h1{
+    font-size: 2rem;
+    font-weight: 249;
+}
+
+.second .topsection{
+    max-width: 80vw;
+    margin: 30px 140px ;
+}
+
+.second .topsection{
+    font-size: 1.5rem;
+    font-weight: 249;
+}
+
+.second .bottomsection{
+    font-size: 1.5rem;
+    font-weight: 249;
+}
+.second .bottomsection{
+    max-width: 80vw;
+    margin: 30px 140px ;
+}
+
+
+.first #linkbtn{
+    text-decoration: none;
+    border-color: rgba(72,185,167,255);
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: bold;
+    color: rgba(72,185,167,255);
+}
+
+.first #linkbtn:hover{
+    text-decoration: none;
+    background-color: rgba(72,185,167,255);
+    color: black;
+}
