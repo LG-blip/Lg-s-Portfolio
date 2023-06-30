@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LG - DeVeLoPeR PortFolio</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -22,45 +22,129 @@
 </head>
 
 <body style="color: rgb(255, 255, 255); background-color: rgb(24, 21, 21);">
-
+<div class="container">
   <!-- Header or Navbar -->
-  <header>
+  <header id="firstsec">
     <nav>
       <div class="left">
-        <img src="logo.png" alt="" height="100px" width="130px">
+        <img src="images/logo.png" alt="" height="100px" width="130px">
       </div>
       <div class="middle"></div>
       <div class="right">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Services</a></li>
-          <li><a href="/">Projects</a></li>&nbsp&nbsp
+          <li><a href="#firstsec">About</a></li>
+          <li><a href="#secondsec">Projets</a></li>
+          <li><a href="#contact">Contact Me</a></li>&nbsp&nbsp
           <a href="https://drive.google.com/file/d/1sMlm58FgTfcVh3ctNRUSfzISDFO6eDuM/view?usp=drive_link" target="_blank"><button type="button" class="btn btn-lg" id="navbtn">Resume</button></a>
         </ul>
       </div>
     </nav>
   </header>
 
+  <br>
+
   <!-- Main section of the website -->
   <main>
     <section class="first">
-      <div class="leftsection">
+      <div class="firstsection">
        <div class="firstline"> Hi, My name is </div><span class="name">Ganesh.</span>
         <div class="secondline">I build things for the web</div>
         <!-- <span id="element"></span> -->
         <p>I'm an Undergrad who's passionate in researching and developing web applications.<br>
           Skilled in programming languages such as Python, Java and Javascript and also have strong<br>
         knowlege in DBMS and Networking <a><></a></p>
-          <a href="https://github.com/LG-blip/" target="_blank"><button type="button" class="btn btn-lg" id="linkbtn">Github link</button></a>
+          <a href="https://github.com/LG-blip/" target="_blank"><button type="button" class="btn btn-lg" id="linkbtn">Visit Github <img src="images/redirect-icon.png" alt="" id="icon"></button></a>
       </div>
-      <!-- <div class="rightsection">
-        <img src="bg_right.png" alt="">
-      </div> -->
     </section>
     <!-- End of first section -->
+
+    <br>
+    
+    <!-- Projects - Section  -->
+
+    <section class="second" id="secondsec">
+      <h1>Projects</h1>
+      <div class="row row-cols-1 row-cols-1-md-3 g-4">
+        <div class="col">
+          <div class="card-group group-1">
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">Bakery Shop</div>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 17px;">Built a landing page for bakery shop using catalyst tools and stored the received orders using datastore.</p>
+                <a href="/" target="_blank"><button class="btn btn-lg btn-outline-success col-8 mx-5" id="redirect">Click</button></a>
+              </div>
+            </div>
+            &nbsp
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">Notes4u</div>
+              <div class="card-body" style="font-size: 17px;">
+                <p class="card-text">Built a notes app using FastAPI, Pydantic and Jinja2 libraries and stored the notes into a MongoDB collection.</p>
+                <a href="/" target="_blank"><button class="btn btn-lg btn-outline-success col-8 mx-5" id="redirect">Click</button></a>
+              </div>
+            </div>
+            &nbsp
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">Login Page</div>
+              <div class="card-body" style="font-size: 17px;">
+                <p class="card-text">Created a login and registration page using PHP and stored the information in  MongoDB and MySql Databases.</p>
+                <a href="/" target="_blank"><button class="btn btn-outline-success btn-lg col-8 mx-5" id="redirect" type="button">Click</button></a>
+              </div>
+            </div>
+          </div>
+          &nbsp
+          <div class="card-group group-1">
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">MyDemoDevops</div>
+              <div class="card-body">
+                <p class="card-text">Learn't the Basics of Devops Pipeline and Created a Container to run a landing page with Html, Css and Javascript.</p>
+                <a href="/" target="_blank"><button class="btn btn-lg btn-outline-success col-8 mx-5" id="redirect">Click</button></a>
+              </div>
+            </div>
+            &nbsp
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">MVC Backend with Node.JS</div>
+              <div class="card-body">
+                <p class="card-text">Created a Backend API with Node.JS with MVC layout, defining Routes and Controller files and communicating with Models.</p>
+                <a href="/" target="_blank"><button class="btn btn-lg btn-outline-success col-8 mx-5" id="redirect">Click</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of second section -->
+
+    <br>
+    <br>
+
+    <!-- Start of third section -->
+    <section class="third">
+      <h1 id="contact">Contact Me</h1>
+      <div class="row row-cols-1 row-cols-1-md-3 g-4">
+        <div class="col">
+          <div class="card-group group-1">
+            <div class="card text-bg-dark mb-3">
+              <div class="card-header" style="font-weight: bold; font-family: 'Roboto Mono', sans-serif;">Ganesh L</div>
+              <div class="card-body">
+                <p class="card-text" style="font-size: 17px;">
+                  Mobile No: +91-9003463310<br>
+                  Email : g021306@gmail.com<br>
+                  GoogleDev profile: <a href="https://g.dev/LgsDev" target="_blank" style="color: rgba(72,185,167,255); text-decoration: none;">Click Here</a><br>
+                  Linkedin profile: <a href="https://www.linkedin.com/in/ganesh-l-925952b9/" target="_blank" style="color: rgba(72,185,167,255); text-decoration: none;">Click Here</a><br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+</div>
+    <!-- End of third section -->
+<hr>
+  <footer> <h5>&copy Copyright 2023 LG </h5></footer>
+
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {

@@ -73,12 +73,12 @@ nav .left{
     width: 70%;
 }
 
-.first .leftsection{
+.first .firstsection{
     font-size: 2.92rem;
     font-weight: 249;
 }
 
-.first .leftsection .firstline{
+.first .firstsection .firstline{
     color: rgba(72,185,167,255);
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1.2rem;
@@ -90,27 +90,22 @@ nav .left{
     color:rgba(204,215,246,255);
 }
 
-.first .leftsection .secondline{
+.first .firstsection .secondline{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 80px;
     color: rgba(112,125,150,255);
 }
 
-.first .leftsection p{
+.first .firstsection p{
     font-family: 'Roboto Mono', sans-serif;
     font-weight: bold;
     font-size: 15px;
     color: rgba(112,125,150,255);
 }
 
-.first .leftsection p a{
+.first .firstsection p a{
     color: rgba(72,185,167,255);
-}
-
-.first .rightsection img{
-    width: 100%;
-    margin: 30px 79px;
 }
 
 #element{
@@ -120,32 +115,6 @@ nav .left{
 .btn {
     color: rgb(25, 25, 71);
 }
-
-
-.second h1{
-    font-size: 2rem;
-    font-weight: 249;
-}
-
-.second .topsection{
-    max-width: 80vw;
-    margin: 30px 140px ;
-}
-
-.second .topsection{
-    font-size: 1.5rem;
-    font-weight: 249;
-}
-
-.second .bottomsection{
-    font-size: 1.5rem;
-    font-weight: 249;
-}
-.second .bottomsection{
-    max-width: 80vw;
-    margin: 30px 140px ;
-}
-
 
 .first #linkbtn{
     text-decoration: none;
@@ -159,4 +128,156 @@ nav .left{
     text-decoration: none;
     background-color: rgba(72,185,167,255);
     color: black;
+}
+
+.first #linkbtn #icon{
+    background-color: rgba(72,185,167,255);
+    border-color: rgba(72,185,167,255);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* second section */
+
+
+.second .topsection{
+    max-width: 80vw;
+    margin: 30px 140px ;
+    font-size: 1.5rem;
+    font-weight: 249;
+}
+
+.second .bottomsection{
+    font-size: 1.5rem;
+    font-weight: 249;
+    max-width: 80vw;
+    margin: 30px 140px ;
+}
+
+.second .div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.second .group-1{
+    margin: 50px 100px 0 215px;
+}
+
+.second h1{
+    font-weight: 249;
+    font-size: 3rem;
+    height: 30%;
+    margin: 0px 175px;
+    color: rgba(204,215,246,255);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.second .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 0 ;
+}
+
+.second .card .group-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.second .card a{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.second .card-header{
+    color: rgba(72,185,167,255);
+}
+
+.second .card-text{
+    color: rgba(204,215,246,255);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.second button{
+    text-decoration: none;
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgba(72,185,167,255);
+    font-size: 17px;
+    background-color: black;
+    font-weight: bold;
+    border-color: rgba(72,185,167,255);
+}
+
+.second button:hover{
+    text-decoration: none;
+    background-color: rgba(72,185,167,255);
+    color: black;
+}
+
+
+/* third section */
+
+
+.third .row{
+    margin: 70px 0 100px 0;
+}
+
+.third h1{
+    font-size: 3rem;
+    height: 30%;
+    margin: 0px 175px;
+    color: rgba(204,215,246,255);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.third .group-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0px 0 0;
+    height: 300px;
+}
+
+.third .card-header{
+    color: rgba(72,185,167,255);
+}
+
+.third .card-text{
+    color: rgba(204,215,246,255);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.third .card {
+    max-width: 40rem; 
+    height: 20rem;
+    align-items: center;
+    margin:  20px 0  10x 120px;
+}
+
+.third .card-header{
+    font-size: 3rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 75%;
+    }
+
+    .second .card{
+        font-size: 50%;
+        width: 50%;
+        height: 50%;
+    }
 }
