@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+body{
+    background-image: url("/images/blob-scene-haikei-teal.png");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -12,21 +21,34 @@ nav{
     font-family: 'Roboto Mono', monospace;
 }
 
+nav img{
+    margin: 30px 0 0 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+
 nav ul {
     display: flex;
     justify-content: center;
 }
 
-nav ul #navbtn{
-    text-decoration: none;
-    color: rgba(72,185,167,255);
-    border-color: rgba(72,185,167,255);
-}
+@media screen and (max-width: 800px){
+    nav{
+        width: 100%;
+        display: inline-block;
+        width: fit-content;
+    }
 
-nav ul #navbtn:hover{
-    text-decoration: none;
-    color: black;
-    background-color: rgba(72,185,167,255);
+    nav img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 40%;
+    }
+
 }
 
 nav .right{
@@ -45,7 +67,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgba(112,125,150,255);
+    color: rgba(202,202,249,255);
 }
 
 nav ul li h6{
@@ -54,7 +76,7 @@ nav ul li h6{
 
 nav ul li a:hover{
     text-decoration: none;
-    color: rgba(202,202,249,255);
+    color: rgba(72,185,167,255);
 }
 
 nav .left{
@@ -87,7 +109,7 @@ nav .left{
 .name{
     font-size: 90px;
     font-weight: bold;
-    color:rgba(204,215,246,255);
+    color: rgba(204,215,246,255);
 }
 
 .first .firstsection .secondline{
@@ -140,57 +162,48 @@ nav .left{
 
 /* second section */
 
-
-.second .topsection{
-    max-width: 80vw;
-    margin: 30px 140px ;
-    font-size: 1.5rem;
-    font-weight: 249;
-}
-
-.second .bottomsection{
-    font-size: 1.5rem;
-    font-weight: 249;
-    max-width: 80vw;
-    margin: 30px 140px ;
-}
-
-.second .div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.second .group-1{
-    margin: 50px 100px 0 215px;
-}
-
 .second h1{
-    font-weight: 249;
     font-size: 3rem;
+    text-align: center;
     height: 30%;
-    margin: 0px 175px;
     color: rgba(204,215,246,255);
     font-family: 'Roboto Mono', sans-serif;
 }
 
+.second .container{
+    display: flex;
+}
+
+.second .row{
+    margin: 0 -5px;
+}
+
+.second .row:after {
+    content: "";
+    display: inline-table;
+    clear: both;
+  }
+
+@media screen and (max-width: 800px) {
+    .second .col {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .second .card{
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
 .second .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px 0 0 ;
-}
-
-.second .card .group-1{
-    display: flex;
+    float: left;
+    margin: 0 0 0 25px;
     align-items: center;
     justify-content: space-around;
-    height: 300px;
-}
-
-.second .card a{
-    align-items: center;
-    justify-content: space-around;
+    padding: 0 10px;
 }
 
 .second .card-header{
@@ -214,70 +227,93 @@ nav .left{
 
 .second button:hover{
     text-decoration: none;
-    background-color: rgba(72,185,167,255);
     color: black;
+    background-color: rgba(72,185,167,255);
+    border-color: black;
+    background-image: url("/images/redirect-icon.png");
 }
 
 
 /* third section */
 
-
-.third .row{
-    margin: 70px 0 100px 0;
-}
-
 .third h1{
+    text-align: center;
     font-size: 3rem;
     height: 30%;
-    margin: 0px 175px;
     color: rgba(204,215,246,255);
     font-family: 'Roboto Mono', sans-serif;
 }
 
-.third .group-1{
+.third .left{
+    flex-basis: 50%;
+    max-width: 300px;
+}
+
+.third img{
+    width: 15rem;
+}
+
+.third .container{
+    border: 2px solid rgba(72,185,167,255);
+    width: 60%;
+    padding: 30px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 0px 0 0;
-    height: 300px;
 }
 
-.third .card-header{
-    color: rgba(72,185,167,255);
+.third label{
+    color: rgba(204,215,245,255);
 }
 
-.third .card-text{
-    color: rgba(204,215,246,255);
+.third .btn{
+    text-decoration: none;
     font-family: 'Roboto Mono', sans-serif;
+    color: rgba(72,185,167,255);
+    font-size: 17px;
+    background-color: black;
+    font-weight: bold;
+    border-color: rgba(72,185,167,255);
 }
 
-.third .card {
-    max-width: 40rem; 
-    height: 20rem;
-    align-items: center;
-    margin:  20px 0  10x 120px;
+.third button:hover{
+    text-decoration: none;
+    background-color: rgba(72,185,167,255);
+    color: black;
 }
 
-.third .card-header{
-    font-size: 3rem;
+
+.third .left:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+@media screen and (max-width: 800px) {
+    .third .container {
+      width: 70%;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .third .right{
+        display: none;
+    }
 }
+
+.third .desc{
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgba(204,215,245,255);
+    text-align: center;
+}
+
+/* footer  */
 
 footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: 'Roboto Mono', sans-serif;
-}
-
-
-@media screen and (max-width: 800px) {
-    .container{
-        width: 75%;
-    }
-
-    .second .card{
-        font-size: 50%;
-        width: 50%;
-        height: 50%;
-    }
 }
